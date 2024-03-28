@@ -1,0 +1,6 @@
+package com.example.bloclearning
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}

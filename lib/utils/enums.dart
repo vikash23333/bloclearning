@@ -1,0 +1,1 @@
+enum ApiLoadingStatus {loading, error, success}
