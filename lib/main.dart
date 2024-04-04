@@ -6,7 +6,8 @@ import 'bloc/counter_bloc/counter_bloc.dart';
 // import 'view/counter_screen.dart';
 // import 'view/switch_example.dart';
 import 'bloc/to_do_bloc/bloc/to_do_bloc.dart';
-import 'view/api_integration.dart';
+import 'view/add_edit_test/added_main_page.dart';
+// import 'view/api_integration.dart';
 // import 'view/to_do_screen.dart';
 
 void main() {
@@ -26,11 +27,12 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         title: 'Flutter Demo',
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const ApiIntegration(),
+        home: const ShowAddedItem(),
       ),
     );
   }
