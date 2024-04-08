@@ -67,3 +67,17 @@ Widget elevatedBtnFunc({
         )),
   ));
 }
+bool isValidEmail(String email) { 
+  final emailRegex = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
+  return emailRegex.hasMatch(email);
+}
+//Convert all the null and emply string into '..'.
+String nullConvertor(String? value, {String valueToShow = '--'}) {
+  String valuetoReturn = '';
+  if (value.toString().toLowerCase() != 'null' && value != '' && value != 'NA' && value != 'N/A') {
+    valuetoReturn = value!;
+  } else {
+    valuetoReturn = valueToShow;
+  }
+  return valuetoReturn;
+}
